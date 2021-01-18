@@ -37,7 +37,7 @@ const App = () => {
 
   useEffect(() => {
     const movieNominations = JSON.parse(
-        localStorage.getItem('react-movie-app-favourites')
+        localStorage.getItem('react-movie-app-nominate')
       );
     if(movieNominations){
       setNominations(movieNominations);
@@ -45,7 +45,7 @@ const App = () => {
   }, []);
 
   const saveToLocalStorage = (items) =>{
-    localStorage.setItem('react-movie-app-favourites', JSON.stringify(items));
+    localStorage.setItem('react-movie-app-nominate', JSON.stringify(items));
   }
 
   const addNominatedMovie = (movie) => {
