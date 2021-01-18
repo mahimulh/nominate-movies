@@ -1,0 +1,55 @@
+body {
+  background: #141414;
+  color: #fff;
+}
+
+.movie-app > .row {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+
+.image-container{
+  position: relative;
+  transition: ease 0.2s;
+}
+
+.overlay-2 {
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  opacity: 100%;
+  width: 100%;
+  position: absolute;
+  font-size: 10px;
+  padding: 12px;
+  text-align: center;
+  z-index: 10;
+}
+
+.image-container:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.image-container:hover .overlay{
+  opacity: 100%;
+}
+
+.overlay{
+  position: absolute;
+  z-index: 10;
+  background: rgba(0,0,0,0.8);
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0%;
+  bottom: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+.banner {
+  text-align: center;
+  background-color:  rgba(180, 44, 243, 0.5);
+}
